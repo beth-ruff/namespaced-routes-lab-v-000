@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190203152137) do
+ActiveRecord::Schema.define(version: 20190203152853) do
 
   create_table "artists", force: :cascade do |t|
     t.string   "name"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20190203152137) do
   create_table "preferences", force: :cascade do |t|
     t.string   "song_sort_order"
     t.string   "artist_sort_order"
-    t.string   "allow_new_songs"
+    t.string   "allow_create_songs"
     t.string   "allow_create_artists"
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
